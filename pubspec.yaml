@@ -1,5 +1,5 @@
 name: codygoldberg
-description: A new Flutter project.
+description: A portfolio of sorts.
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -10,10 +10,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^2.0.0
+  charts_flutter:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  pedantic: ^1.11.0
+  graphql: ^5.0.0-nullsafety.4
 
 flutter:
   uses-material-design: false
