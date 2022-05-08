@@ -58,12 +58,13 @@ Future<void> main(List<String> arguments) async {
   String? after;
   while (true) {
     final options = QueryOptions(document: gql(query), variables: {
-      'owner': 'maalox',
-      'name': 'digihaler-flutter',
+      'owner': 'prefanatic',
+      'name': 'exsto',
       'after': after,
     });
 
     final result = await client.query(options);
+    print(result);
 
     final history = result.data!['repository']['branch1']['target']['history'];
     final bool hasNextPage = history['pageInfo']['hasNextPage'];

@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Cody Goldberg',
+      title: 'whois',
       theme: ThemeData(),
       home: MyHomePage(),
     );
@@ -40,15 +40,15 @@ class _MyHomePageState extends State<MyHomePage> {
               ContributionOverview(),
             ],
           ),
-          BlendMask(
-            child: FractionallySizedBox(
-              alignment: Alignment.centerRight,
-              widthFactor: 0.45,
-              child: Container(
-                color: Colors.white,
-              ),
-            ),
-          ),
+          // BlendMask(
+          //   child: FractionallySizedBox(
+          //     alignment: Alignment.centerRight,
+          //     widthFactor: 0.45,
+          //     child: Container(
+          //       color: Colors.white,
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
@@ -82,7 +82,7 @@ class BlurbContent extends StatelessWidget {
       left: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Text(
-          'Hello world',
+          'whois',
           textAlign: TextAlign.end,
           style: TextStyle(fontSize: 24),
         ),
@@ -121,11 +121,11 @@ class HeaderTitle extends StatelessWidget {
       ),
       child: SplitPanel(
         left: Text(
-          'Cody',
+          'who',
           textAlign: TextAlign.end,
         ),
         right: Text(
-          'Goldberg',
+          'is',
         ),
       ),
     );
